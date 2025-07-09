@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<title>App Building -S81</title>
+</head>
+<body>
+
+	<section>
+	<!-- need to build a Navbar here -->
+		<nav class="navbar navbar-expand-lg bg-light">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">Isla Pilipinas</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Locations
+		          </a>
+		          <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="#locations">Luzon</a></li>
+		            <li><a class="dropdown-item" href="#locations">Visayas</a></li>
+		            <li><a class="dropdown-item" href="#locations">Mindanao</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#about">About Us</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#contact">Book A Tour</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#contact">Contact</a>
+		        </li>
+		      </ul>
+		      <form class="d-flex" role="search">
+		        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+	</section>
+
+	<!-- end of nav -->
+
+
+	<!-- start the landing page here -->
+	<section>
+		<div id="hero" class="container-fluid p-0" id="hero" style="height: 100vh; overflow: hidden; position: relative;">
+			<!-- Background Image -->
+		   <img src="./images/cebu.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+
+		   <!-- Content Overlay -->
+		   <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center" style="position: relative; z-index: 1;">
+		       <h1 class="hero-title text-white mb-3">Isla Pilipinas</h1>
+		       <h2 class="hero-subtitle text-white mb-4">Discover the Hidden Gems of the Philippines</h2>
+		       <a href="#destinations" class="btn btn-light btn-lg">Explore Now</a>
+		   </div>
+		</div>
+	</section>
+
+	<!-- start of cards here -->
+	<section id="locations">
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="./images/ilocosnorte.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Ilocos Norte</h5>
+		        <p>Some representative placeholder content for the first slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="./images/pangasinan.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Pangasinan</h5>
+		        <p>Some representative placeholder content for the second slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="./images/palawan.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Palawan</h5>
+		        <p>Some representative placeholder content for the third slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="./images/mountpinatubo.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Mt. Pinatubo</h5>
+		        <p>Some representative placeholder content for the third slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="./images/davao.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Davao</h5>
+		        <p>Some representative placeholder content for the third slide.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</section>
+
+	<!-- start of cards -->
+
+	<section id="about" class="bg-dark py-5">
+	    <div class="container text-center text-white mb-5">
+	        <h2 class="hero-subtitle mb-4">Why Choose Isla Pilipinas Travel & Tours?</h2>
+	        <p style="color: white;">We are a proudly Filipino travel company. Our team is made up of locals who know the Philippines deeply—from its world-famous islands to its hidden mountain trails. We don’t just take you to places; we bring you stories, culture, and the warmth of Filipino hospitality.</p>
+	    </div>
+	    <div class="container">
+	        <div class="row justify-content-center g-4">
+	            
+	            <div class="col-md-4 d-flex">
+	                <div class="card h-100">
+	                    <img src="./images/travelandtours.jpg" class="card-img-top" alt="...">
+	                    <div class="card-body d-flex flex-column">
+	                        <p class="card-text">
+	                            Skip the typical tourist spots. Isla Pilipinas creates tours that highlight both the well-loved icons like Palawan and Boracay and the off-the-beaten-path destinations such as Batanes, Romblon, and Camiguin.
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-4 d-flex">
+	                <div class="card h-100">
+	                    <img src="./images/pilipinasdestinations.png" class="card-img-top" alt="...">
+	                    <div class="card-body d-flex flex-column">
+	                        <p class="card-text">
+	                            Your trip, your way. We customize your tours based on your interests, schedule, and budget. Whether you're a solo traveler, couple, family, or group, we make sure your itinerary fits your travel style perfectly.
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-4 d-flex">
+	                <div class="card h-100">
+	                    <img src="./images/travelandtours.jpg" class="card-img-top" alt="...">
+	                    <div class="card-body d-flex flex-column">
+	                        <p class="card-text">
+	                            From transportation and accommodations to guided tours and activity bookings, we’ve got you covered. We handle the details so you can enjoy a smooth and stress-free vacation.
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+
+	        </div>
+	    </div>
+	</section>
+
+	<footer id="contact" class="bg-white text-dark py-5">
+	    <div class="container text-center">
+	        <div class="row justify-content-center">
+
+	            <div class="col-md-6 mb-4">
+	                <h5 class="mb-3">Contact Us</h5>
+	                <p>Email: <a href="mailto:info@islapilipinas.com" class="text-dark">info@islapilipinas.com</a></p>
+	                <p>Phone: <a href="tel:+639123456789" class="text-dark">+63 912 345 6789</a></p>
+	                <p>Address: Bayambang, Pangasinan, Philippines</p>
+	            </div>
+
+	        </div>
+
+	        <div class="mt-4">
+	            <p class="mb-0">&copy; 2025 Isla Pilipinas Travel & Tours. All rights reserved.</p>
+	        </div>
+	    </div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
