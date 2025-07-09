@@ -7,47 +7,41 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="./index.css">
-	<title>App Building -S81</title>
+	<title>App Building -S82</title>
 </head>
 <body>
 
 	<section>
-	<!-- need to build a Navbar here -->
 		<nav class="navbar navbar-expand-lg bg-light">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#">Isla Pilipinas</a>
+		  <div class="container-fluid d-flex justify-content-center">
+		    <a class="navbar-brand" href="#">Law isCool</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
-		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: center;">
+		      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 		        <li class="nav-item">
-		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#categories-section" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Category
+		          </a>
+		          <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="#categories">Listings</a></li>
+		            <li><a class="dropdown-item" href="#resources">Sample Resources</a></li>
+		          </ul>
 		        </li>
 		        <li class="nav-item dropdown">
 		          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		            Locations
+		            About
 		          </a>
 		          <ul class="dropdown-menu">
-		            <li><a class="dropdown-item" href="#locations">Luzon</a></li>
-		            <li><a class="dropdown-item" href="#locations">Visayas</a></li>
-		            <li><a class="dropdown-item" href="#locations">Mindanao</a></li>
+		            <li><a class="dropdown-item" href="#mission">Mission</a></li>
+		            <li><a class="dropdown-item" href="#contact">Contact</a></li>
 		          </ul>
 		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#about">About Us</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#contact">Book A Tour</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#contact">Contact</a>
-		        </li>
 		      </ul>
-		      <form class="d-flex" role="search">
-		        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-		        <button class="btn btn-outline-success" type="submit">Search</button>
-		      </form>
 		    </div>
 		  </div>
 		</nav>
@@ -57,92 +51,76 @@
 
 
 	<!-- start the landing page here -->
-	<section>
-		<div id="hero" class="container-fluid p-0" id="hero" style="height: 100vh; overflow: hidden; position: relative;">
-			<!-- Background Image -->
-		   <img src="./images/cebu.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+	<section id="home">
+		<div class="container-fluid p-0" style="height: 100vh; overflow: hidden; position: relative;">
 
-		   <!-- Content Overlay -->
+		   <img src="./images/mallet2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+
 		   <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center" style="position: relative; z-index: 1;">
-		       <h1 class="hero-title text-white mb-3">Isla Pilipinas</h1>
-		       <h2 class="hero-subtitle text-white mb-4">Discover the Hidden Gems of the Philippines</h2>
-		       <a href="#destinations" class="btn btn-light btn-lg">Explore Now</a>
+		       <h1 class="hero-title text-white mb-3" style="font-size: 10rem">Law isCool</h1>
+		       <h2 class="hero-subtitle text-white mb-4">Where Future Lawyers Chill & Thrive.</h2>
+		       <a href="#categories" class="btn btn-lg my-5" style="background-color: yellow;">Learn More</a>
 		   </div>
 		</div>
 	</section>
 
-	<!-- start of cards here -->
-	<section id="locations">
-		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-		  <div class="carousel-indicators">
-		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		  </div>
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img src="./images/ilocosnorte.jpg" class="d-block w-100" alt="...">
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Ilocos Norte</h5>
-		        <p>Some representative placeholder content for the first slide.</p>
-		      </div>
-		    </div>
-		    <div class="carousel-item">
-		      <img src="./images/pangasinan.jpg" class="d-block w-100" alt="...">
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Pangasinan</h5>
-		        <p>Some representative placeholder content for the second slide.</p>
-		      </div>
-		    </div>
-		    <div class="carousel-item">
-		      <img src="./images/palawan.jpg" class="d-block w-100" alt="...">
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Palawan</h5>
-		        <p>Some representative placeholder content for the third slide.</p>
-		      </div>
-		    </div>
-		    <div class="carousel-item">
-		      <img src="./images/mountpinatubo.jpg" class="d-block w-100" alt="...">
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Mt. Pinatubo</h5>
-		        <p>Some representative placeholder content for the third slide.</p>
-		      </div>
-		    </div>
-		    <div class="carousel-item">
-		      <img src="./images/davao.jpg" class="d-block w-100" alt="...">
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Davao</h5>
-		        <p>Some representative placeholder content for the third slide.</p>
-		      </div>
-		    </div>
-		  </div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="visually-hidden">Next</span>
-		  </button>
-		</div>
+	<!-- start of my intro -->
+
+	<section id="introduction" class="bg-dark py-5">
+	    <div class="container text-center text-white mb-5">
+	        <h2 class="hero-subtitle mb-4" style="color: yellow; font-size: 40px; font-weight: bold;">Why Law isCool is Cool</h2>
+	        <p style="color: white; font-size: 20px;">Law isCool is a vibrant online community built by law students, for law students and being extended to bar examinees and aspiring paralegals. We’re a team of aspiring legal professionals who believe that learning law shouldn’t be intimidating or boring—it should be accessible, engaging, and empowering.</p>
+	        <p style="color: white; font-size: 20px;">We are future lawyers, advocates, and changemakers, united by our passion for legal education and our desire to support fellow students on their law school journey.</p>
+	    </div>
+	    <div class="container text-center text-white mb-5">
+	        <h2 class="hero-subtitle mb-4" style="color: yellow; font-size: 40px; font-weight: bold;">Why We Do What We Do</h2>
+	        <p style="color: white; font-size: 20px;">We know what it’s like to struggle with complicated cases, endless readings, and bar exam pressure. That’s why we created Law isCool—a space where law students can find study resources, exchange ideas, prepare for moot courts, and grow their legal minds together.</p>
+	        <p style="color: white; font-size: 20px;">Our mission is simple:
+	        	<li style="font-size: 20px">
+	        		<ul>
+	        			✅ Make legal learning cool, not cold.
+	        		</ul>
+	        		<ul>
+	        			✅ Build a supportive law student community.
+	        		</ul>
+	        		<ul>
+	        			✅ Help future lawyers thrive—not just survive—in law school and beyond.
+	        		</ul>
+	        	</li>
+	        </p>
+	    </div>
 	</section>
 
-	<!-- start of cards -->
+	<!-- featured -->
 
-	<section id="about" class="bg-dark py-5">
-	    <div class="container text-center text-white mb-5">
-	        <h2 class="hero-subtitle mb-4">Why Choose Isla Pilipinas Travel & Tours?</h2>
-	        <p style="color: white;">We are a proudly Filipino travel company. Our team is made up of locals who know the Philippines deeply—from its world-famous islands to its hidden mountain trails. We don’t just take you to places; we bring you stories, culture, and the warmth of Filipino hospitality.</p>
+	<section id="featured">
+	    <div class="card mt-5 mb-5 py-5 mx-auto bg-white" style="max-width: 1000px;">
+	      <img src="./images/lawstudents2.jpg" class="card-img-top mx-auto d-block" alt="..." style="max-width: 80%; height: 300px; object-fit: cover;">
+	      <div class="card-body text-center">
+	        <h3 class="card-title py-3">Featuring aspiring Filipino lawyers.</h3>
+	        <p class="card-text py-2" style="font-size: 20px;">Here, we learn together. We help each other through tough readings, case digests, recitations, moot courts, and bar exam preparations. We celebrate the wins, and we lift each other up through the struggles.</p>
+	      </div>
 	    </div>
-	    <div class="container">
+	</section>
+
+	<!-- categories -->
+
+	<section id="categories-section" class="bg-dark py-5">
+	    <div id="categories" class="container text-center text-white py-5">
+	        <h2 class="hero-subtitle mb-4" style="color: yellow; font-size: 40px; font-weight: bold;">LAW GEEKS HUB</h2>
+	        <p style="color: white; font-size: 20px;">Law isCool has integrated an inclusive online space built for every passionate legal learner—whether you’re an undergraduate law student starting your journey, a bar examinee preparing for the big day, or an aspiring paralegal developing your skills in the legal field.</p>
+	        <p style="color: white; font-size: 20px;">We believe that learning the law shouldn't be a lonely path. Here, you'll find a supportive community of fellow law geeks who love breaking down complex cases, debating legal ideas, and sharing tools to succeed in the world of law.</p>
+
+	    </div>
+	    <div class="container py-5">
 	        <div class="row justify-content-center g-4">
 	            
 	            <div class="col-md-4 d-flex">
 	                <div class="card h-100">
-	                    <img src="./images/travelandtours.jpg" class="card-img-top" alt="...">
+	                    <img src="./images/undergrad.jpg" class="card-img-top" alt="...">
 	                    <div class="card-body d-flex flex-column">
-	                        <p class="card-text">
-	                            Skip the typical tourist spots. Isla Pilipinas creates tours that highlight both the well-loved icons like Palawan and Boracay and the off-the-beaten-path destinations such as Batanes, Romblon, and Camiguin.
+	                        <p class="card-text text-center" style="font-weight: bold; font-size: 20px;">
+	                            Undergraduate Students
 	                        </p>
 	                    </div>
 	                </div>
@@ -150,10 +128,10 @@
 
 	            <div class="col-md-4 d-flex">
 	                <div class="card h-100">
-	                    <img src="./images/pilipinasdestinations.png" class="card-img-top" alt="...">
+	                    <img src="./images/bar3.jpg" class="card-img-top" alt="...">
 	                    <div class="card-body d-flex flex-column">
-	                        <p class="card-text">
-	                            Your trip, your way. We customize your tours based on your interests, schedule, and budget. Whether you're a solo traveler, couple, family, or group, we make sure your itinerary fits your travel style perfectly.
+	                        <p class="card-text text-center" style="font-weight: bold; font-size: 20px;">
+	                            Bar Examinees
 	                        </p>
 	                    </div>
 	                </div>
@@ -161,10 +139,10 @@
 
 	            <div class="col-md-4 d-flex">
 	                <div class="card h-100">
-	                    <img src="./images/travelandtours.jpg" class="card-img-top" alt="...">
+	                    <img src="./images/paralegal.jpg" class="card-img-top" alt="...">
 	                    <div class="card-body d-flex flex-column">
-	                        <p class="card-text">
-	                            From transportation and accommodations to guided tours and activity bookings, we’ve got you covered. We handle the details so you can enjoy a smooth and stress-free vacation.
+	                        <p class="card-text text-center" style="font-weight: bold; font-size: 20px;">
+	                            Aspiring Paralegals
 	                        </p>
 	                    </div>
 	                </div>
@@ -174,24 +152,96 @@
 	    </div>
 	</section>
 
-	<footer id="contact" class="bg-white text-dark py-5">
-	    <div class="container text-center">
-	        <div class="row justify-content-center">
+	<!-- sample resources -->
 
-	            <div class="col-md-6 mb-4">
-	                <h5 class="mb-3">Contact Us</h5>
-	                <p>Email: <a href="mailto:info@islapilipinas.com" class="text-dark">info@islapilipinas.com</a></p>
-	                <p>Phone: <a href="tel:+639123456789" class="text-dark">+63 912 345 6789</a></p>
-	                <p>Address: Bayambang, Pangasinan, Philippines</p>
+	<section id="resources" style="background-color: white;">
+	    <div class="accordion mx-auto my-5 p-5 text-white p-3 rounded" id="accordionExample" style="max-width: 1200px; margin: 0 auto;">
+	        <div class="accordion-item bg-primary text-white">
+	            <h2 class="accordion-header" id="headingOne">
+	                <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	                    Study Resources
+	                </button>
+	            </h2>
+	            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+	                <div class="accordion-body">
+	                    <ul>
+	                        <li>Downloadable case briefs, statutes, and court decisions</li>
+	                        <li>Subject-wise study guides (Criminal Law, Civil Law, Constitutional Law, etc.)</li>
+	                        <li>Past bar exam questions and answers</li>
+	                    </ul>
+	                </div>
 	            </div>
-
 	        </div>
 
-	        <div class="mt-4">
-	            <p class="mb-0">&copy; 2025 Isla Pilipinas Travel & Tours. All rights reserved.</p>
+	        <div class="accordion-item bg-primary text-white">
+	            <h2 class="accordion-header" id="headingTwo">
+	                <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	                    Case Discussion Forum
+	                </button>
+	            </h2>
+	            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+	                <div class="accordion-body">
+	                    <ul>
+	                        <li>Topic-based discussion boards</li>
+	                        <li>Peer-to-peer legal debate spaces</li>
+	                        <li>Share and analyze recent case law</li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="accordion-item bg-primary text-white">
+	            <h2 class="accordion-header" id="headingThree">
+	                <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	                    Mock Trial & Moot Court Hub
+	                </button>
+	            </h2>
+	            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+	                <div class="accordion-body">
+	                    <ul>
+	                        <li>Virtual moot court sign-ups</li>
+	                        <li>Upload and download pleadings, memorials</li>
+	                        <li>Tips and strategies for mooting competitions</li>
+	                    </ul>
+	                </div>
+	            </div>
 	        </div>
 	    </div>
+	</section>
+
+	<!-- about -->
+
+	<section id="about" class="mt-5 mb-5 py-5 text-center bg-dark">
+		<div id="mission" class="container-fluid" style="max-width: 1200px;">
+			<h2 style="color: yellow; font-size: 40px; font-weight: bold; margin-bottom: 30px;">Mission Statement</h2>
+			<p style="color: white; font-size: 25px; margin-top: 10px;">Law isCool exists to empower the next generation of Filipino legal minds by making legal education accessible, collaborative, and engaging.</p>
+			<p style="color: white;font-size: 25px;">We are committed to creating a supportive learning space where law students, bar examinees, and aspiring paralegals can connect, learn, and thrive together—breaking down the complexities of the law into meaningful, practical knowledge for a just and informed society.</p>
+		</div>
+	</section>
+
+	<!-- contact -->
+
+	<section id="contact" style="background-color: white;" class="py-5">
+		<h2>Contact Us</h2>
+	    <div class="container" style="max-width: 800px;">
+	        <div class="mb-3">
+	            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+	            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+	        </div>
+	        <div class="mb-5">
+	            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+	            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	            <a href="#" class="btn btn-lg mt-5" style="background-color: black; color: yellow;">Submit</a>
+	        </div>
+	    </div>
+	</section>
+
+	<footer class="bg-dark py-4">
+	    <div class="container text-center">
+	        <p class="mb-0 text-white">Law isCool &copy 2025. All rights reserved.</p>
+	    </div>
 	</footer>
+
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
